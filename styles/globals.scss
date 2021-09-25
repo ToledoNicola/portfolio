@@ -1,0 +1,114 @@
+@import "cssreset";
+@import "mixin";
+// @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+:root {
+  --gray0: #fff;
+  --gray0_1: #efefef;
+  --gray1: #dadada;
+  --gray2: #575757;
+  --gray3: #353535;
+  --gray4: #272727;
+  --gray6: #212121;
+  --blue: #127eb1;
+  --blue-light: #089eca;
+  --blue-super-light: #ededff;
+  --instagram: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+
+.light {
+  --primary: var(--blue);
+  --primary-light: var(--blue-light);
+  --bg: var(--gray0);
+  --text: var(--gray2);
+  --primary: var(--blue);
+  --training-box: var(--gray0);
+  --social-bg: var(--gray0);
+}
+.dark {
+  --bg: var(--gray6);
+  --text: var(--gray1);
+  --primary: var(--instagram);
+  --primary-light: var(--instagram);
+  --training-box: var(--gray3);
+  --social-bg: var(--gray4);
+}
+
+* {
+  box-sizing: inherit; // best bractice
+  outline: none;
+}
+
+html {
+  font-size: 62.5%; //( 62.5% di defaulf font-size 16px ,quindi (62.5/100)*16 = 10px)
+  box-sizing: border-box;
+  line-height: 1.15;
+
+  @include for-size(tab-land) {
+    font-size: 60%;
+  }
+  @include for-size(tab-port) {
+    font-size: 57.5%;
+  }
+  @include for-size(phone) {
+    font-size: 55%;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  min-height: -webkit-fill-available;
+  font-family: "Montserrat", sans-serif;
+  // https://www.w3schools.com/css/css_boxmodel.asp
+  box-sizing: border-box; // IMPORTANTE SE SI UTILIZZA PADDING MARGIN PER FARLI INCLUDERE NELL'ALTEZZA E LARGHEZZA ALTRIMENTI L'AUMENTERANNO
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.2s ease-out 0s;
+  padding-top: 6rem; //per compensae la navbar
+  .link {
+    color: inherit;
+    font-weight: 700;
+    font-style: italic;
+    transition: 0.2s ease-out 0s;
+    &:hover {
+      background: var(--primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.ev {
+  z-index: 0;
+  position: relative;
+  font-style: italic;
+  color: var(--gray0);
+  font-weight: 600;
+  display: inline-block;
+  word-break: break-word;
+  white-space: normal;
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-2deg);
+    background: var(--primary);
+  }
+}
+
+h2.subtitle {
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--text);
+  margin: 0px;
+  transition: color 0.2s ease-out 0s;
+  span {
+    font-weight: 600;
+    font-style: italic;
+  }
+}

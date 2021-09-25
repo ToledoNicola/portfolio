@@ -1,0 +1,46 @@
+// devices sizes
+@mixin for-size($range) {
+  $phone-small: 23em; //368px
+  $phone: 37.5em; // 600px 37,5x16px ( 16px default font-size perche nelle media query em e rem hanno come riferimento il valore impostato dall'utente nel browser 16 e non quello scritto da noi in altri file css)
+  $tablet-portrait: 80em; // 1280 px
+  $tablet-landscape: 97em; // 1552px
+  $big-desktop: 1800px;
+
+  @if $range == phone-small {
+    @media (max-width: $phone-small) {
+      @content;
+    }
+  }
+  @if $range == phone {
+    @media (max-width: $phone) {
+      @content;
+    }
+  } @else if $range == tab-port {
+    @media (max-width: $tablet-portrait) {
+      @content;
+    }
+  } @else if $range == tab-land {
+    @media (max-width: $tablet-landscape) {
+      @content;
+    }
+  } @else if $range == big-desktop {
+    @media (min-width: $big-desktop) {
+      @content;
+    }
+  }
+}
+@mixin insta-orange {
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
