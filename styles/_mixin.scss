@@ -29,6 +29,14 @@
     }
   }
 }
+
+@mixin box-shadow($x, $y, $blur, $c) {
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+
 @mixin insta-orange {
   background: #833ab4; /* fallback for old browsers */
   background: -webkit-linear-gradient(

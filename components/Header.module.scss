@@ -1,9 +1,4 @@
-@mixin box-shadow($x, $y, $blur, $c) {
-    -webkit-box-shadow: $x $y $blur $c;
-    -moz-box-shadow: $x $y $blur $c;
-    -ms-box-shadow: $x $y $blur $c;
-    box-shadow: $x $y $blur $c;
-  }
+
   $break: 985px;
   
   .header {
@@ -30,7 +25,7 @@
         margin-right: 4rem;
       }
   
-      #logo {
+      .logo {
         position: absolute;
         width: 80px;
         height: 100%;
@@ -68,7 +63,7 @@
           &:hover {
             transform: rotate(0deg);
           }
-          &.text-yellow {
+          &.textYellow {
             color: #ffcf96;
           }
         }

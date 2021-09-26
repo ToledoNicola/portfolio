@@ -1,0 +1,29 @@
+.toggle {
+    width: 50px;
+    height: 26px;
+    border-radius: 90px;
+    background: var(--primary);
+  
+    transform: scale(0.7);
+    cursor: pointer;
+    &.dark span {
+      background-color: rgb(255, 229, 181);
+      transform: translate3d(24px, 0px, 0px) rotate(0deg);
+    }
+  
+    span {
+      display: inline-block;
+  
+      position: relative;
+      top: 3px;
+      left: 3px;
+      height: 20px;
+      width: 20px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px;
+  
+      background-color: rgb(255, 207, 150);
+      border-radius: 50px;
+      transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+    }
+  }
+  

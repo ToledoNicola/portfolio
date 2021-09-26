@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: var(--primary);
+    color: rgb(240, 240, 240);
+    display: flex;
+    border: 0;
+    // height: 100%;
+    // width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.2rem;
+  }
