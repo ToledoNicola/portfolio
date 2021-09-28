@@ -1,0 +1,7 @@
+.container {
+    height: 100%;
+    width: 100%;
+    //   per creare l'effetto snap delle sezioni
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }

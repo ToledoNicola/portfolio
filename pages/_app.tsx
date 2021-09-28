@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
+    // per transizione tema senza effetti
     // <ThemeProvider disableTransitionOnChange attribute="class" >
     <ThemeProvider  attribute="class" >
       <Component {...pageProps} />
