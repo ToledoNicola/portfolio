@@ -36,6 +36,10 @@
   -ms-box-shadow: $x $y $blur $c;
   box-shadow: $x $y $blur $c;
 }
+@mixin bkg-clip {
+  -webkit-background-clip: text;
+  background-clip:text;
+}
 
 @mixin insta-orange {
   background: #833ab4; /* fallback for old browsers */
