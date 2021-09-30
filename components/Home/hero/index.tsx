@@ -18,7 +18,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
               sono <span className={style.nome} id="nome">Nicola Toledo</span>
             </h1>
             <h2>
-              Un <span>entusiasta</span> Front-end, No-code Developer & Trainer
+              Un <span>entusiasta</span> Developer & Trainer
             </h2>
             <div className={style.button} id="button">
               <Button text="chi sono" />

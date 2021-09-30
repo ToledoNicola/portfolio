@@ -8,8 +8,8 @@ const Home: NextPage = () => {
   return (
     <Page>
       <Hero />
-      <About/>
       <Services/>
+      <About/>
     </Page>
   );
 };
