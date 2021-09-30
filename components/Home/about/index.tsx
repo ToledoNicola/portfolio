@@ -1,9 +1,15 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useEffect } from "react";
 import style from "./About.module.scss";
-
+// const DynamicComponentWithNoSSR = dynamic(
+//   () => import('../components/hello3'),
+//   { ssr: false }
+// )
 interface AboutProps {}
 
 const About: FunctionComponent<AboutProps> = () => {
+  useEffect(() => {
+    import("@ptkdev/webcomponent-instagram-widget");
+  }, []);
   return (
     <section className={style.section} id="about">
       <div className={style.container}>
@@ -54,7 +60,7 @@ const About: FunctionComponent<AboutProps> = () => {
           </p>
           <p>
             oltre alla programmazione &quot;classica&quot; sono uno sviluppatore{" "}
-            {' '}<em>No-code</em> ossia creare software senza scivere codice (se vuoi
+            <em>No-code</em> ossia creare software senza scivere codice (se vuoi
             saperne di più visita il mio{" "}
             <a
               className="link"
@@ -90,15 +96,15 @@ const About: FunctionComponent<AboutProps> = () => {
             </a>{" "}
             puoi vedere alcune foto 🌅
           </p>
-          {/* <instagram-widget
-          username="@nicolatoledo.dev"
-          grid="3x3"
-          shadows="type1"
-          border-spacing="3%"
-          items-limit="12"
-          mouse-hover="type1"
-          force-square="no"
-        ></instagram-widget> */}
+          <instagram-widget
+            username="@nicolatoledo.dev"
+            grid="3x3"
+            shadows="type1"
+            border-spacing="3%"
+            items-limit="12"
+            mouse-hover="type1"
+            force-square="no"
+          />
 
           <h2>
             Il mio attuale <span className="ev">stack</span> di
