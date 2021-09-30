@@ -1,4 +1,4 @@
-import Button from "components/button";
+import Button from "components/Common/button";
 import { FunctionComponent } from "react";
 import style from "./Hero.module.scss";
 interface HeroProps {}

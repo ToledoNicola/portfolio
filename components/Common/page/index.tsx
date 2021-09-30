@@ -1,4 +1,4 @@
-import Header from "components/header";
+import Header from "components/Common/header";
 import { FunctionComponent } from "react";
 import style from "./Page.module.scss";
 interface PageProps {}

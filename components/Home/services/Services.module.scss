@@ -1,0 +1,142 @@
+@import "styles/mixin";
+
+.section {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  //   per creare l'effetto snap dal container non funzionava
+  // scroll-snap-align: start;
+
+  .container {
+    max-width: 110rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14rem 6rem 2rem 6rem;
+    font-weight: 200;
+    text-align: center;
+    @include for-size(phone) {
+      padding: 14rem 3rem 2rem 3rem;
+    }
+  }
+  .title {
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    h1 {
+      font-size: 2.5rem;
+
+      background: var(--primary);
+      @include bkg-clip;
+      -webkit-text-fill-color: transparent;
+
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0px 0px 1rem;
+      transition: color 0.2s ease-out 0s;
+    }
+  }
+  .body {
+    p {
+      line-height: 1.8;
+      font-size: 1.7rem;
+      margin: 4rem 0 4rem 0;
+      font-weight: 400;
+    }
+    h2 {
+      font-weight: 600;
+
+      color: var(--text);
+      margin-top: 10rem;
+      font-size: 2rem;
+      margin-bottom: 4rem;
+    }
+    p.stack {
+      background: var(--primary);
+      @include bkg-clip;
+      -webkit-text-fill-color: transparent;
+      width: 75%;
+      font-size: 2.4rem;
+      line-height: 1.8;
+      font-weight: 700;
+      margin: 0px auto 5rem;
+      @include for-size(phone) {
+        width: 100%;
+      }
+    }
+    em {
+      font-weight: 600;
+      transition: color 0.2s ease-out 0s;
+    }
+
+    &__grid {
+      padding: 4rem;
+      display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      // la differenza con quello sopra è che se la larghezza dello schermo è minore di 40rem il box continua a diminuire invece di bloccarsi a 40rem
+      grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+      gap: 5rem;
+      .card {
+        border-radius: 5px;
+        box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.09);
+        // background: rgb(51, 51, 51);
+        background: var(--training-box);
+        padding: 2rem;
+        min-height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__descrizione {
+          @include for-size(phone) {
+            font-size: 1.4rem;
+          }
+        }
+        // &__content{
+
+        // }
+        &__button {
+          display: flex;
+          justify-content: center;
+        }
+        &__emoji {
+          font-size: 6.7rem;
+        }
+        h3 {
+          font-size: 2rem;
+          color: var(--primary);
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            text-transform: capitalize;
+            line-height: 1.2;
+            margin-top: 0.5em;
+            font-weight: 600;
+            font-style: italic;
+            font-size: 2rem;
+            padding-left: 3rem;
+            &::before {
+              content: "→";
+              margin-left: -3rem;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.highlight {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  transform: rotate(-2deg);
+}

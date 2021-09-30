@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import Image from "next/image";
 import styles from "./Header.module.scss";
-import ThemeChanger from "components/themeChanger";
+import ThemeChanger from "components/Common/themeChanger";
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
