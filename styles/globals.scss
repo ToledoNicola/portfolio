@@ -114,3 +114,8 @@ h2.subtitle {
     font-style: italic;
   }
 }
+
+em {
+  font-weight: 600;
+  transition: color 0.2s ease-out 0s;
+}

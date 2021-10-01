@@ -1,0 +1,42 @@
+@import "styles/mixin";
+
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  // CON IL GRID PER RENDERLO AUTO RESPONSIVE
+  // .container {
+  //   display: grid;
+  // grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); //auto-fit per continure ad aspandere quando finiscono i div
+  //   grid-gap: 30px;
+  // }
+  .elements__contained {
+    max-width: 130rem;
+    padding: 14rem 4rem;
+    @include for-size(phone) {
+      padding: 14rem 1rem;
+    }
+  }
+  .container {
+    .projectW {
+      margin-bottom: 12rem;
+    }
+  }
+
+  .title {
+    margin-bottom: 7rem;
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+      background: var(--primary);
+      @include bkg-clip;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0px 0px 1rem;
+      transition: color 0.2s ease-out 0s;
+    }
+  }
+}
+
