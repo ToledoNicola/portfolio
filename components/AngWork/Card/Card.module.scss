@@ -1,0 +1,30 @@
+.card {
+    border-radius: 5px;
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.09);
+    // background: rgb(51, 51, 51);
+    background: var(--training-box);
+    padding: 7rem;
+    min-height: 25rem;
+    h3 {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        text-transform: capitalize;
+        line-height: 1.2;
+        margin-top: 0.5em;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 2rem;
+        padding-left: 3rem;
+        &::before {
+          content: "→";
+          margin-left: -3rem;
+          position: absolute;
+        }
+      }
+    }
+  }

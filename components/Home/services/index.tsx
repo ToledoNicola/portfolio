@@ -5,7 +5,7 @@ interface ServicesProps {}
 
 const Services: FunctionComponent<ServicesProps> = () => {
   return (
-    <section className={style.section}>
+    <section className={style.section} id="services" >
       <div className={style.container}>
         <div className={style.title}>
           <h1>Servizi</h1>

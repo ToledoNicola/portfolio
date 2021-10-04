@@ -2,6 +2,8 @@ import { FunctionComponent } from "react";
 import Image from "next/image";
 import styles from "./Header.module.scss";
 import ThemeChanger from "components/Common/themeChanger";
+import Link from "next/link";
+
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
@@ -18,19 +20,33 @@ const Header: FunctionComponent<HeaderProps> = () => {
         </div>
 
         <ul>
-          <li>Chi sono</li>
-          <li>Servizi</li>
-          <li>Progetti</li>
           <li>
-            <a
-              href="https://training.nicolatoledo.dev/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Formazione
-            </a>
+            <Link href="/#about">
+              <a>Chi sono </a>
+            </Link>
           </li>
-          <li>Contatti</li>
+          <li>
+            {" "}
+            <Link href="/#services">
+              <a>Servizi</a>
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link href="/#projects">
+              <a>Progetti</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/#contacts">
+              <a>Contatti</a>
+            </Link>
+          </li>
+          <li className={styles.textYellow}>
+            <Link href="/angular-workshop">
+              <a>Formazione</a>
+            </Link>
+          </li>
           <li className={styles.textYellow}>
             <a
               href="https://blog.nicolatoledo.dev/"
@@ -41,7 +57,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
             </a>
           </li>
         </ul>
-        <ThemeChanger/>
+        <ThemeChanger />
       </nav>
     </header>
   );

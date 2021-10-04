@@ -5,7 +5,7 @@ interface ProjectsProps {}
 
 const Projects: FunctionComponent<ProjectsProps> = () => {
   return (
-    <section className={style.section} id="portfolio">
+    <section className={style.section} id="projects">
       <div className={style.elements__contained} >
         <div>
           <div className={style.title} id="title">

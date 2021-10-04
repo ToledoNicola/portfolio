@@ -1,0 +1,22 @@
+.section {
+    padding-bottom: 7rem;
+    padding-top: 13rem;
+    .head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .logo {
+        height: 15rem;
+      }
+      div {
+        margin-top: 2rem;
+        h1 {
+          font-size: 5rem;
+          background: var(--primary);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }

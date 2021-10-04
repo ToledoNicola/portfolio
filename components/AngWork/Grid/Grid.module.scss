@@ -1,0 +1,10 @@
+.grid {
+    padding: 4rem;
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    // la differenza con quello sopra è che se la larghezza dello schermo è minore di 40rem il box continua a diminuire invece di bloccarsi a 40rem
+    grid-template-columns: repeat(auto-fit, minmax(min(35rem, 100%), 1fr));
+    gap: 5rem;
+    
+  }
+  
