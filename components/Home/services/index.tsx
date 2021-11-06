@@ -29,7 +29,7 @@ const Services: FunctionComponent<ServicesProps> = () => {
                 </p>
                 <p>
                   Attraverso lo sviluppo &quot;classico&quot; oppure con
-                  piattaforme no-code 
+                  piattaforme no-code, per creare app veloci e belle
                   {/* per realizzare MVP 10x piu velocemente e
                   riducendo i costi di sviluppo fino al 70% */}
                 </p>
@@ -45,9 +45,12 @@ const Services: FunctionComponent<ServicesProps> = () => {
                   <span className="ev">Formazione</span>
                 </h3>
                 <p>
-                  ho realizzato 2 corsi Angular per le <em>aziende</em>, il
+                  Collaboro con varie aziende e startup di educazione ed ho realizzato 2 workshop su Angular per le <em>aziende</em>, il
                   primo ha un focus iniziale per chi proviene dal backend e
-                  vuole iniziare ad usare angular, il secondo è rivolto ad un
+                  vuole iniziare ad usare angular
+                </p>
+                <p>
+                il secondo è rivolto ad un
                   team che gia usa angular ma vuole conoscere le best practice
                   per aumentare la produttività
                 </p>

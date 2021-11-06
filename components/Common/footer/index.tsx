@@ -9,6 +9,7 @@ interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
   const { theme } = useTheme();
+  console.log(theme)
   return (
     <div className={style.footer}>
       <Socials />
@@ -22,7 +23,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
             alt="lettere"
           />
         </div>
-        <p>COPYRIGHT © 2020, Nicola toledo</p>
+        <p>COPYRIGHT © 2021, Nicola toledo</p>
       </div>
     </div>
   );

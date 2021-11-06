@@ -39,7 +39,8 @@ const About: FunctionComponent<AboutProps> = () => {
           </p>
           <p>
             una volta finito il master aprii la mia partita iva ed iniziai a
-            lavorare in molti progetti principalmente con
+            lavorare in molti progetti principalmente lato front-end e
+            serverless con
             <span className="ev">Angular</span> e{" "}
             <span className="ev">Firebase</span>, nel frattempo iniziai a
             lavorare come docente freelance e creai il mio{" "}
@@ -49,8 +50,9 @@ const About: FunctionComponent<AboutProps> = () => {
             per aziende.
           </p>
           <p>
-            oltre alla programmazione &quot;classica&quot; sono uno sviluppatore{" "}
-            <em>No-code</em> ossia creare software senza scivere codice 
+            oltre alla programmazione &quot;classica&quot; utilizzo piattaforme{" "}
+            <em>no/low code</em> come Webflow, Notion, Framer per sviluppare una
+            o piu parti in modo visuale
             {/* (se vuoi
             saperne di più visita il mio{" "}
             <a
@@ -102,8 +104,8 @@ const About: FunctionComponent<AboutProps> = () => {
             <span className="ev">tecnologie/linguaggi</span> è:
           </h2>
           <p className={style.stack}>
-            HTML - CSS - SASS - JAVASCRIPT - TYPESCRIPT - ANGULAR - REACT -
-            NEXT.JS - AKITA - RXJS - FIREBASE - IONIC - GIT - WEBFLOW - NOTION
+            SASS - TAILWIND - JAVASCRIPT - TYPESCRIPT - NEXT.JS - ANGULAR - REACT - AKITA -
+            RXJS - FIREBASE - IONIC - GIT - WEBFLOW - NOTION
           </p>
         </div>
       </div>
