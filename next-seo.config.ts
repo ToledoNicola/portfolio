@@ -5,7 +5,8 @@ const conf: NextSeoProps = {
     type: "website",
     locale: "it",
     url: "https://www.nicolatoledo.dev",
-    site_name: "nicola toledo | dev & Trainer",
+    site_name: "Nicola Toledo | dev & Trainer",
+    title: "Nicola Toledo | dev & Trainer",
   },
   twitter: {
     handle: "@handle",
