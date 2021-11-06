@@ -54,7 +54,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
             </li>
             <li className={styles.li}>
               <Link href="/workshops/angular">
-                <a>Formazione</a>
+                <a>Workshop</a>
               </Link>
             </li>
             {/* <li className={styles.li} >

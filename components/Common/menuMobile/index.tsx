@@ -36,7 +36,7 @@ const MenuMobile: FunctionComponent<MenuMobileProps> = () => {
             </li>
             <li className={styles.li}>
               <Link href="/workshops/angular">
-                <a onClick={()=>setOpen(false)} >Formazione</a>
+                <a onClick={()=>setOpen(false)} >Workshop</a>
               </Link>
             </li>
             {/* <li className={styles.li}>
