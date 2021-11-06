@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import style from "./Socials.module.scss";
-import cx from "classNames";
+import cx from "classnames";
 import {
   FaLinkedinIn,
   FaFacebook,

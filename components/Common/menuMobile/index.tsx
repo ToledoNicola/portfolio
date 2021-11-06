@@ -1,7 +1,7 @@
 import { FunctionComponent, useState } from "react";
 import styles from "./MenuMobile.module.scss";
 import Link from "next/link";
-import cx from "classNames";
+import cx from "classnames";
 import ThemeChanger from "components/Common/themeChanger";
 
 interface MenuMobileProps {}
