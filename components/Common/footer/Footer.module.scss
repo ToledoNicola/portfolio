@@ -15,13 +15,12 @@
     flex-direction: column;
     align-items: center;
     .img {
-      object-fit: contain;
       height: 220px;
       position: relative;
-      width: 100%;
-      @include for-size(phone) {
-        width: 16rem;
-      }
+      width: 220px;
+      // @include for-size(phone) {
+      //   height: 16rem;
+      // }
     }
     p {
       text-align: center;
@@ -31,7 +30,7 @@
       text-transform: uppercase;
       margin: 0px;
       @include for-size(phone) {
-        font-size: 0.4rem;
+        font-size: 1rem;
       }
     }
   }

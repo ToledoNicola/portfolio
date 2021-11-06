@@ -1,5 +1,7 @@
 @import "styles/mixin";
-
+.link{
+  text-decoration: none;
+}
 .section {
   height: calc(100vh - 6rem); //rimuovo la navbar dall'altezza totale
   width: 100%;
@@ -185,9 +187,9 @@
       }
     }
   }
-//   app-socials {
-//     display: none;
-//   }
+  .socials {
+    display: none;
+  }
 
   .arrow {
     padding-bottom: 4rem;
@@ -352,8 +354,8 @@
     .react {
       right: -60px;
     }
-    .html {
-    }
+    // .html {
+    // }
     .sass {
       top: 177px;
 
@@ -372,8 +374,8 @@
 
       right: -1px;
     }
-    .flutter {
-    }
+    // .flutter {
+    // }
     .ts {
       right: -32px;
     }

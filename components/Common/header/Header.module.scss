@@ -22,7 +22,9 @@
       align-items: center;
       transition: background 0.2s ease-out 0s;
       box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-  
+      @media (max-width: $break) {
+        padding-left: 0;
+      }
       .flag {
         font-size: x-large;
         z-index: 1;
@@ -44,7 +46,7 @@
         display: flex;
         align-items: center;
       }
-      ul {
+      .ul {
         @media (max-width: $break) {
           display: none;
         }
@@ -52,7 +54,7 @@
         margin-right: 4rem;
         position: relative;
         top: 4px;
-        li {
+        .li {
           display: grid;
           place-items: center;
           height: 60px;
@@ -78,15 +80,15 @@
       }
     }
   }
-  // @media (min-width: $break) {
-  //   app-mobile-menu {
-  //     display: none;
-  //   }
-  // }
+  @media (min-width: $break) {
+    .mobileMenu {
+      display: none;
+    }
+  }
   
-  // @media (max-width: $break) {
-  //   app-theme-toggle {
-  //     display: none;
-  //   }
-  // }
+  @media (max-width: $break) {
+    .themeToggle {
+      display: none;
+    }
+  }
   

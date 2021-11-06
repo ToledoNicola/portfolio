@@ -4,6 +4,8 @@ import style from "./Hero.module.scss";
 import Image from "next/image";
 import instaa from "public/insta-me@full.png";
 import Socials from "components/Common/socials";
+import Link from "next/link";
+
 interface HeroProps {}
 
 const Hero: FunctionComponent<HeroProps> = () => {
@@ -52,8 +54,16 @@ const Hero: FunctionComponent<HeroProps> = () => {
               Un <span>entusiasta</span> Developer & Trainer
             </h2>
             <div className={style.button} id="button">
-              <Button text="chi sono" />
+            <Link href="/#services">
+            <a className={style.link}>
+              <Button text="I miei servizi" />
+             
+            </a>
+          </Link>
+          <div className={style.socials}>
+
               <Socials small={true}/>
+          </div>
             </div>
           </div>
         </div>
