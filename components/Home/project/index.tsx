@@ -26,7 +26,10 @@ const Project: FunctionComponent<ProjectProps> = ({
           <div className={style.imgW}>
             <Image
             layout="fill"
-            src={"/projects/" + imgName + ".png"}
+            className={style.img}
+            quality={100}
+            // placeholder="blur"
+            src={`/projects/${imgName}@full.png`}
             alt={imgName}
           />
           </div>

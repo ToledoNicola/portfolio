@@ -1,21 +1,27 @@
 import { FunctionComponent } from "react";
 import style from "./Footer.module.scss";
+import Image from "next/image";
+import { useTheme } from "next-themes";
+import Socials from "components/Common/socials";
+import LogoWhite from "public/logo-lettere-bianco.png";
+import logoBlack from "public/logo-lettere-nero.png";
 interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
+  const { theme } = useTheme();
   return (
     <div className={style.footer}>
-      {/* <app-socials></app-socials> */}
+      <Socials />
       <div className={style.copyright}>
-        {/* <img
-    loading="lazy"
-    [src]="
-      theme.isDark
-        ? 'assets/logo-lettere-bianco.png'
-        : 'assets/logo-lettere-nero.png'
-    "
-    alt="lettere"
-  /> */}
+        <div className={style.img}>
+          <Image
+            layout="fill"
+            objectFit="contain"
+            
+            src={theme == "dark" ? LogoWhite : logoBlack}
+            alt="lettere"
+          />
+        </div>
         <p>COPYRIGHT © 2020, Nicola toledo</p>
       </div>
     </div>

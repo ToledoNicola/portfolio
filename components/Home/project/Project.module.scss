@@ -50,15 +50,26 @@
       margin: 0 2rem;
       position: relative;
       .imgW {
-        position: relative;
-        height: 400px;
-        width: 500px;
+        // position: relative;
+        // height: 100%;
+        // width: 100%;
+
+        width: 100%;
+
+        > span {
+          position: unset !important;
+        }
       }
       img {
-        height: 100%;
-        width: 100%;
         object-fit: contain;
-        object-position: center center;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+
+        // height: 100%;
+        // width: 100%;
+        // object-fit: contain;
+        // object-position: center center;
         // box-shadow: 0 1px 15px 4px rgba(0, 0, 0, 0.24);
       }
     }

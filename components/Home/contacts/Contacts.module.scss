@@ -1,0 +1,48 @@
+@import "styles/mixin";
+
+.section {
+  width: 100%;
+  height: auto;
+  padding: 4rem 0rem;
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      margin-bottom: 7rem;
+      text-align: center;
+      h1 {
+        font-size: 2.5rem;
+        background: var(--primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0px 0px 1rem;
+        transition: color 0.2s ease-out 0s;
+      }
+      h2 {
+        font-size: 2rem;
+        color: var(--text);
+        margin: 0px;
+        transition: color 0.2s ease-out 0s;
+        font-weight: 300;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .email {
+      margin-bottom: 4rem;
+      a {
+        color: var(--text);
+        font-size: 1.7rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.2s ease-out 0s;
+      }
+    }
+  }
+}

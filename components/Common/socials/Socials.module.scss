@@ -1,0 +1,106 @@
+@import "styles/mixin";
+
+.socials {
+  // height: 90px;
+  // margin: auto;
+  font-size: 0;
+  text-align: center;
+  display: flex;
+
+  .btn,
+  .btn:before,
+  .btn .fa {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  }
+  .btn:before {
+    top: 90%;
+    left: -110%;
+  }
+  .btn .fa {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  .btn.facebook:before {
+    background-color: #3b5998;
+  }
+  .btn.facebook .fa {
+    color: #3b5998;
+  }
+  .btn.twitter:before {
+    background-color: #55acee;
+  }
+  .btn.twitter .fa {
+    color: #55acee;
+  }
+  .btn.instagram:before {
+    background-color: #e4405f;
+  }
+  .btn.instagram .fa {
+    color: #e4405f;
+  }
+  .btn.github:before {
+    background-color: #000000;
+  }
+  .btn.github .fa {
+    color: #000000;
+  }
+  .btn.linkedin:before {
+    background-color: #0077b5;
+  }
+  .btn.linkedin .fa {
+    color: #0077b5;
+  }
+  .btn:focus:before,
+  .btn:hover:before {
+    top: -10%;
+    left: -10%;
+  }
+  .btn:focus .fa,
+  .btn:hover .fa {
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .btn {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    background-color: var(--social-bg);
+    width: 80px;
+    height: 80px;
+    line-height: 90px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 6px 0px rgba(0, 0, 0, 0.1);
+    opacity: 0.99;
+    @include for-size(phone) {
+      width: 51px;
+      height: 51px;
+    }
+  }
+  .btn:before {
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .btn .fa {
+    font-size: 37px;
+    vertical-align: middle;
+  }
+  .btnSmall {
+    width: 48px;
+    height: 48px;
+    .fa {
+      font-size: 28px;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import About from "components/Home/about";
 import Hero from "components/Home/hero";
 import Services from "components/Home/services";
 import Projects from "components/Home/projects";
+import Contacts from "components/Home/contacts";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <Services/>
       <About/>
       <Projects/>
+      <Contacts/>
     </Page>
   );
 };

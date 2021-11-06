@@ -26,6 +26,27 @@
 
     .wrapper {
       position: relative;
+      .instaWrap{
+          height: 10rem;
+          width: 10rem;
+          display: block;
+          position: relative;
+          animation: move 1s ease-out;
+        }
+        
+        @keyframes move {
+          0% {
+            opacity: 0;
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        
+      }
       h1 {
         margin-top: 1rem;
         line-height: 1.3;
@@ -175,5 +196,216 @@
 @include for-size(phone-small) {
   .arrow {
     display: none;
+  }
+}
+
+.logos {
+  position: absolute;
+  right: 0;
+  top: -176px;
+  opacity: 0.5;
+  width: 305px;
+  height: 432px;
+  .angular {
+    height: 169px;
+    position: absolute;
+    right: 128px;
+    top: 135px;
+
+    animation: raining 1.5s ease-in;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .react {
+    height: 91px;
+    position: absolute;
+    top: 148px;
+    right: -38px;
+    transform: rotate(30deg);
+    // animation: raining 500ms ease-in;
+    animation: raining 1.7s ease-in;
+  }
+  .html {
+    height: 63px;
+
+    position: absolute;
+
+    top: 100px;
+
+    right: 132px;
+    // animation: raining 3s ease-in;
+
+    animation: raining 2s ease-in;
+  }
+  .sass {
+    height: 67px;
+    position: absolute;
+    top: 144px;
+    right: 27px;
+    transform: rotate(-44deg);
+    // animation: raining 1.5s ease-in;
+    animation: raining 1.6s ease-in;
+  }
+  .firebase {
+    height: 81px;
+    position: absolute;
+    top: 219px;
+    right: 84px;
+    animation: raining 1.3s ease-in;
+  }
+  .css {
+    height: 49px;
+    position: absolute;
+    top: 230px;
+    right: 36px;
+    transform: rotate(4deg);
+    animation: raining 1.4s ease-in;
+  }
+  .flutter {
+    height: 109px;
+
+    position: absolute;
+
+    top: 33px;
+
+    right: -5px;
+
+    transform: rotate(44deg);
+    animation: raining 2.1s ease-in;
+  }
+  .ts {
+    height: 49px;
+
+    position: absolute;
+    top: 90px;
+    right: 6px;
+    animation: raining 2.2s ease-in;
+  }
+  .rxjs {
+    height: 106px;
+    position: absolute;
+    top: 284px;
+    right: 107px;
+    // animation: raining 2s ease-in;
+    animation: raining 1.1s ease-in;
+  }
+  .redux {
+    height: 118px;
+
+    position: absolute;
+
+    top: 294px;
+    right: -15px;
+    animation: raining 1s ease-in;
+  }
+  .js {
+    height: 78px;
+
+    position: absolute;
+
+    top: 73px;
+
+    right: 211px;
+
+    transform: rotate(-17deg);
+    animation: raining 1.9s ease-in;
+  }
+  .ngrx {
+    height: 116px;
+    position: absolute;
+    top: 8px;
+    right: 111px;
+    transform: rotate(-82deg);
+    animation: raining 1.8s ease-in;
+  }
+  .ionic {
+    height: 49px;
+
+    position: absolute;
+
+    top: 249px;
+
+    right: -10px;
+    animation: raining 1.2s ease-in;
+  }
+}
+
+@keyframes raining {
+  0% {
+    top: -100%;
+    opacity: 0;
+  }
+}
+// ipad e desktop
+@media (min-width: 768px) {
+  .logos {
+    right: 70px;
+    width: 274px;
+    height: 513px;
+
+    .angular {
+      right: 206px;
+
+      top: 166px;
+    }
+    .react {
+      right: -60px;
+    }
+    .html {
+    }
+    .sass {
+      top: 177px;
+
+      right: 84px;
+    }
+    .firebase {
+      height: 101px;
+
+      top: 310px;
+
+      right: 88px;
+    }
+    .css {
+      height: 83px;
+      top: 239px;
+
+      right: -1px;
+    }
+    .flutter {
+    }
+    .ts {
+      right: -32px;
+    }
+    .rxjs {
+      top: 434px;
+      right: 113px;
+    }
+    .redux {
+      top: 528px;
+      right: 18px;
+    }
+    .js {
+      right: 253px;
+    }
+    .ngrx {
+      top: 77px;
+      right: 342px;
+    }
+    .ionic {
+      top: 392px;
+    }
+  }
+}
+
+@include for-size(phone) {
+  .logos {
+    top: -307px;
+  }
+}
+@include for-size(phone-small) {
+  .logos {
+    right: -51px;
+    top: -276px;
   }
 }
