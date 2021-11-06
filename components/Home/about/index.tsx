@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import style from "./About.module.scss";
+import Link from "next/link";
 
 interface AboutProps {}
 
@@ -16,7 +17,7 @@ const About: FunctionComponent<AboutProps> = () => {
         <div className={style.body}>
           <p>
             Mi chiamo <span className="ev">Nicola Toledo</span> ,e sono uno
-            sviluppatore Front-end & Angular Trainer di
+            sviluppatore Front-end & Trainer di
             <span className="ev">Roma</span>
           </p>
           <p>
@@ -42,19 +43,15 @@ const About: FunctionComponent<AboutProps> = () => {
             <span className="ev">Angular</span> e{" "}
             <span className="ev">Firebase</span>, nel frattempo iniziai a
             lavorare come docente freelance e creai il mio{" "}
-            <a
-              className="link"
-              href="https://training.nicolatoledo.dev/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              corso Angular
-            </a>{" "}
+            <Link href="https://training.nicolatoledo.dev/">
+              <a className="link">workshop Angular</a>
+            </Link>{" "}
             per aziende.
           </p>
           <p>
             oltre alla programmazione &quot;classica&quot; sono uno sviluppatore{" "}
-            {' '}<em>No-code</em> ossia creare software senza scivere codice (se vuoi
+            <em>No-code</em> ossia creare software senza scivere codice 
+            {/* (se vuoi
             saperne di più visita il mio{" "}
             <a
               className="link"
@@ -64,7 +61,7 @@ const About: FunctionComponent<AboutProps> = () => {
             >
               Blog
             </a>
-            )
+            ) */}
           </p>
 
           <p>

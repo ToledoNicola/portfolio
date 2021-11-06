@@ -52,11 +52,11 @@ const Header: FunctionComponent<HeaderProps> = () => {
                 <a>Contatti</a>
               </Link>
             </li>
-            <li className={styles.li}>
+            {/* <li className={styles.li}>
               <Link href="/workshops/angular">
                 <a>Workshop</a>
               </Link>
-            </li>
+            </li> */}
             {/* <li className={styles.li} >
             <Link  href="/blog">
                 <a>Blog</a>

@@ -34,11 +34,11 @@ const MenuMobile: FunctionComponent<MenuMobileProps> = () => {
                 <a onClick={()=>setOpen(false)} >Contatti</a>
               </Link>
             </li>
-            <li className={styles.li}>
+            {/* <li className={styles.li}>
               <Link href="/workshops/angular">
                 <a onClick={()=>setOpen(false)} >Workshop</a>
               </Link>
-            </li>
+            </li> */}
             {/* <li className={styles.li}>
               <Link href="/blog">
                 <a onClick={()=>setOpen(false)} >Blog</a>
