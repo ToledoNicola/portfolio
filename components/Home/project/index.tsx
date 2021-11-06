@@ -1,18 +1,19 @@
 import { FunctionComponent, ReactNode } from "react";
 import Image from "next/image";
 import style from "./Project.module.scss";
+
 interface ProjectProps {
   title: string;
   reverse?: boolean;
   description: ReactNode;
-  imgName: string;
+  img: StaticImageData;
   stack: string;
 }
 
 const Project: FunctionComponent<ProjectProps> = ({
   title,
   reverse = false,
-  imgName,
+  img,
   description,
   stack,
 }) => {
@@ -28,9 +29,9 @@ const Project: FunctionComponent<ProjectProps> = ({
             layout="fill"
             className={style.img}
             quality={100}
-            // placeholder="blur"
-            src={`/projects/${imgName}@full.png`}
-            alt={imgName}
+            placeholder="blur"
+            src={img}
+            alt={'project'}
           />
           </div>
           

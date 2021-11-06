@@ -26,14 +26,14 @@ const Socials: FunctionComponent<SocialsProps> = ({ small = false }) => {
       >
         <FaLinkedinIn className={style.fa} />
       </a>
-      <a
+      {/* <a
         className={smallClass(small) + ` ${style.btn} ${style.facebook}`}
         target="_blank"
         rel="noreferrer"
         href="https://www.facebook.com/nicola.toledo.dev"
       >
         <FaFacebook className={style.fa} />
-      </a>
+      </a> */}
       <a
         className={smallClass(small) + ` ${style.btn} ${style.instagram}`}
         rel="noreferrer"

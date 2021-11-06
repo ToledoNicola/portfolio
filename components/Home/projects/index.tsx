@@ -1,6 +1,11 @@
 import { FunctionComponent } from "react";
 import Project from "../project";
 import style from "./Projects.module.scss";
+import portfolio from "public/projects/portfolio@full.png";
+import angularpro from "public/projects/angularpro@full.png";
+import caf from "public/projects/caf@full.png";
+import leonard from "public/projects/leonard@full.png";
+
 interface ProjectsProps {}
 
 const Projects: FunctionComponent<ProjectsProps> = () => {
@@ -18,7 +23,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         <div className={style.container}>
           <div className={style.projectW}>
             <Project
-              imgName="portfolio"
+              img={portfolio}
               title="Portfolio"
               stack="angular - scully - sass - flexbox - css grid"
               description={
@@ -44,7 +49,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           </div>
           <div className={style.projectW}>
             <Project
-              imgName="angularpro"
+                          img={angularpro}
+
               reverse={true}
               title="Angular Il Corso"
               stack="angular - ngrx - rxjs - redux - firebase"
@@ -68,7 +74,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           <div className={style.projectW}>
             <Project
               title="Leonard System"
-              imgName="leonard"
+              img={leonard}
               stack="ionic - akita - Rxjs - firebase - serverless"
               description={
                 <p>
@@ -87,7 +93,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           <div className={style.projectW}>
             <Project
               title="Caf SportelloAmico"
-              imgName="caf"
+              img={caf}
+
               reverse={true}
               stack="ionic - akita - rxjs"
               description={

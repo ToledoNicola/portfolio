@@ -17,7 +17,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
           <Image
             layout="fill"
             objectFit="contain"
-            
+            placeholder="blur"
             src={theme == "dark" ? LogoWhite : logoBlack}
             alt="lettere"
           />
