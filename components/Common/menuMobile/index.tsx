@@ -3,12 +3,23 @@ import styles from "./MenuMobile.module.scss";
 import Link from "next/link";
 import cx from "classnames";
 import ThemeChanger from "components/Common/themeChanger";
+import { event } from "lib/gtag";
 
 interface MenuMobileProps {}
 
+const gtEventMenu = (section: string) =>
+event({
+  action: `user click menu link`,
+  category: "Navbar Mobile",
+  label: section,
+});
+
 const MenuMobile: FunctionComponent<MenuMobileProps> = () => {
   const [open, setOpen] = useState(false);
-
+  const clickLink=(section:string)=>{
+    gtEventMenu(section)
+    setOpen(false)
+  }
   return (
     <div>
       <div className={cx({ [styles.open]: open })+ ' '+styles.menu}>
@@ -16,22 +27,22 @@ const MenuMobile: FunctionComponent<MenuMobileProps> = () => {
           <ul className={styles.ul}>
             <li className={styles.li}>
               <Link  href="/#about">
-                <a onClick={()=>setOpen(false)} >Chi sono </a>
+                <a onClick={()=>clickLink('About')} >Chi sono </a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#services">
-                <a onClick={()=>setOpen(false)} >Servizi</a>
+                <a onClick={()=>clickLink('Services')} >Servizi</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#projects">
-                <a onClick={()=>setOpen(false)} >Progetti</a>
+                <a onClick={()=>clickLink('Projects')} >Progetti</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#contacts">
-                <a onClick={()=>setOpen(false)} >Contatti</a>
+                <a onClick={()=>clickLink('Contacts')} >Contatti</a>
               </Link>
             </li>
             {/* <li className={styles.li}>

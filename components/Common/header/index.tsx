@@ -7,18 +7,24 @@ import { useTheme } from "next-themes";
 import logo from "public/logo.png";
 import logoWhite from "public/logo-min-bianco.png";
 import MenuMobile from "../menuMobile";
+import { event } from "lib/gtag";
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
   const { theme } = useTheme();
-
+  const gtEventMenu = (section: string) =>
+    event({
+      action: `user click menu link`,
+      category: "Navbar",
+      label: section,
+    });
   return (
     <header className={styles.header}>
       <nav>
         <div className={styles.logo}>
           <Link href="/">
-            <a>
+            <a onClick={()=>gtEventMenu('homePage')}>
               <Image
                 src={theme == "light" ? logo : logoWhite}
                 alt="Logo"
@@ -34,22 +40,22 @@ const Header: FunctionComponent<HeaderProps> = () => {
           <ul className={styles.ul}>
             <li className={styles.li}>
               <Link href="/#about">
-                <a>Chi sono </a>
+                <a onClick={()=>gtEventMenu('About')}>Chi sono </a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#services">
-                <a>Servizi</a>
+                <a onClick={()=>gtEventMenu('Services')}>Servizi</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#projects">
-                <a>Progetti</a>
+                <a onClick={()=>gtEventMenu('Projects')}>Progetti</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#contacts">
-                <a>Contatti</a>
+                <a onClick={()=>gtEventMenu('Contacts')}>Contatti</a>
               </Link>
             </li>
             {/* <li className={styles.li}>

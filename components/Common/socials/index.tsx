@@ -8,17 +8,24 @@ import {
   FaTwitter,
   FaGithub,
 } from "react-icons/fa";
+import { event } from "lib/gtag";
 
 interface SocialsProps {
   small?: boolean;
 }
-
+const gtEvent = (section: string) =>
+  event({
+    action: `user click social link`,
+    category: "socials",
+    label: section,
+  });
 const smallClass = (small: boolean) => cx({ [style.btnSmall]: small });
 
 const Socials: FunctionComponent<SocialsProps> = ({ small = false }) => {
   return (
     <div className={style.socials}>
       <a
+        onClick={() => gtEvent("linkedIn")}
         className={smallClass(small) + ` ${style.btn} ${style.linkedin}`}
         target="_blank"
         rel="noreferrer"
@@ -35,6 +42,7 @@ const Socials: FunctionComponent<SocialsProps> = ({ small = false }) => {
         <FaFacebook className={style.fa} />
       </a> */}
       <a
+        onClick={() => gtEvent("instagram")}
         className={smallClass(small) + ` ${style.btn} ${style.instagram}`}
         rel="noreferrer"
         target="_blank"
@@ -43,6 +51,7 @@ const Socials: FunctionComponent<SocialsProps> = ({ small = false }) => {
         <FaInstagram className={style.fa} />
       </a>
       <a
+        onClick={() => gtEvent("twitter")}
         className={smallClass(small) + ` ${style.btn} ${style.twitter}`}
         target="_blank"
         rel="noreferrer"
@@ -51,6 +60,7 @@ const Socials: FunctionComponent<SocialsProps> = ({ small = false }) => {
         <FaTwitter className={style.fa} />
       </a>
       <a
+        onClick={() => gtEvent("github")}
         className={smallClass(small) + ` ${style.btn} ${style.github}`}
         target="_blank"
         rel="noreferrer"
