@@ -1,5 +1,5 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { GA_TRACKING_ID } from 'lib/gtag'
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import { GA_TRACKING_ID } from "lib/gtag";
 
 class MyDocument extends Document {
   render() {
@@ -10,8 +10,9 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap"
             rel="stylesheet"
           />
-            {/* Global Site Tag (gtag.js) - Google Analytics */}
-            <script
+
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
           />
@@ -27,14 +28,18 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <script
+            defer
+            src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+          ></script>
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
