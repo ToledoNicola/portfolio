@@ -21,10 +21,10 @@ const About: FunctionComponent<AboutProps> = () => {
             <span className="ev">Roma</span>
           </p>
           <p>
-            2 mesi dopo il diploma in <em>&quot;Informatica&quot;</em>, ho
-            iniziato a lavorare come sviluppatore back-end con php e mysql, pero
-            dopo 2 anni non sentivo più gli stessi stimoli che avevo
-            all&apos;inizio, volevo provare e sperimentare 🧪 altri campi,
+            {/* 2 mesi dopo il diploma in <em>&quot;Informatica&quot;</em>, ho */}
+            Ho iniziato a lavorare come sviluppatore back-end con php e mysql,
+            pero dopo 2 anni non sentivo più gli stessi stimoli che avevo
+            all&apos;inizio, volevo provare e sperimentare altri campi,
             conoscere nuove tecnologie e girare il 🌎 con il mio 💻
           </p>
           <p>
@@ -52,7 +52,7 @@ const About: FunctionComponent<AboutProps> = () => {
           <p>
             oltre alla programmazione &quot;classica&quot; utilizzo piattaforme{" "}
             <em>no/low code</em> come Webflow, Notion, Framer per sviluppare una
-            o piu parti in modo visuale
+            o piu parti in modo visuale.
             {/* (se vuoi
             saperne di più visita il mio{" "}
             <a
@@ -65,9 +65,16 @@ const About: FunctionComponent<AboutProps> = () => {
             </a>
             ) */}
           </p>
+          <p>
+            Dal 2020 mi sono innamorato di <span className="ev">Next.js</span> e{" "}
+            <span className="ev">Notion</span>, il primo è un framework react,
+            per creare applicazioeni web <em>veloci</em> e <em>performanti</em>,
+            mentre il secondo è uno strumento no-code basato su pagine e
+            database per oganizzare qualsiasi cosa.
+          </p>
 
           <p>
-            tutto questo mi ha dato la possibilita di diventare un
+            Tutto questo mi ha dato la possibilita di diventare un
             <span className="ev"> nomade digitale </span> e viaggiare in
             bellissimi posti come:
           </p>
@@ -104,8 +111,8 @@ const About: FunctionComponent<AboutProps> = () => {
             <span className="ev">tecnologie/linguaggi</span> è:
           </h2>
           <p className={style.stack}>
-            SASS - TAILWIND - JAVASCRIPT - TYPESCRIPT - NEXT.JS - ANGULAR - REACT - AKITA -
-            RXJS - FIREBASE - IONIC - GIT - WEBFLOW - NOTION
+            SASS - TAILWIND - JAVASCRIPT - TYPESCRIPT - NEXT.JS - ANGULAR -
+            REACT - RXJS - FIREBASE - IONIC - GIT - WEBFLOW - NOTION
           </p>
         </div>
       </div>
