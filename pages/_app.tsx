@@ -21,8 +21,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [router.events])
   return (
     // per transizione tema senza effetti
-    // <ThemeProvider disableTransitionOnChange attribute="class" >
-    <ThemeProvider  attribute="class" >
+    <ThemeProvider disableTransitionOnChange attribute="class" >
+    {/* <ThemeProvider  attribute="class" > */}
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </ThemeProvider>

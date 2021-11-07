@@ -71,6 +71,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
       <div className={style.arrow}>
         <a>
           <svg
+          className="animate-bounce"
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"

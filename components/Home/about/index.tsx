@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 import style from "./About.module.scss";
 import Link from "next/link";
+import {InstaGrid} from "../instagrid";
 
 interface AboutProps {}
 
@@ -96,6 +97,10 @@ const About: FunctionComponent<AboutProps> = () => {
             </a>{" "}
             puoi vedere alcune foto 🌅
           </p>
+          <div className="mt-32">
+          <InstaGrid/>
+
+          </div>
           {/* <instagram-widget
           username="@nicolatoledo.dev"
           grid="3x3"
