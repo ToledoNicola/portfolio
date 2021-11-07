@@ -1,6 +1,7 @@
 import { NextSeoProps } from "next-seo";
 
 const conf: NextSeoProps = {
+  title:'Nicola Toledo | dev & Trainer',
   openGraph: {
     type: "website",
     locale: "it",
