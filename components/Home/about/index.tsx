@@ -10,7 +10,7 @@ const About: FunctionComponent<AboutProps> = () => {
       <div className={style.container}>
         <div className={style.title}>
           <h1>Chi sono</h1>
-          <h2 className={style.subtitle}>
+          <h2 className="subtitle">
             Se ti stai <span>chiedendo</span> chi sono ...
           </h2>
         </div>

@@ -1,4 +1,10 @@
-@import "cssreset";
+// da rimuovere cssreset
+// @import "cssreset";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "mixin";
 
 :root {

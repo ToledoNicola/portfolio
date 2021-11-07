@@ -15,7 +15,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         <div>
           <div className={style.title} id="title">
             <h1>Progetti</h1>
-            <h2 className={style.subtitle} >
+            <h2 className="subtitle" >
               Alcuni dei miei ultimi <span>progetti</span> ...
             </h2>
           </div>
