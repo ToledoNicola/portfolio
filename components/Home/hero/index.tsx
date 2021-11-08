@@ -13,13 +13,25 @@ const Hero: FunctionComponent<HeroProps> = () => {
     <section className={style.section} id="welcome">
       <div className={style.helloWrapper}>
         <div className={style.logos}>
-          <img className={style.angular} src="/logos/angular.png" alt="angular" />
+          <img
+            className={style.angular}
+            src="/logos/angular.png"
+            alt="angular"
+          />
           <img className={style.react} src="/logos/react.png" alt="react" />
           <img className={style.html} src="/logos/html.png" alt="html" />
           <img className={style.sass} src="/logos/scss.png" alt="scss" />
-          <img className={style.firebase} src="/logos/firebase.png" alt="firebase" />
+          <img
+            className={style.firebase}
+            src="/logos/firebase.png"
+            alt="firebase"
+          />
           <img className={style.css} src="/logos/css.png" alt="css" />
-          <img className={style.flutter} src="/logos/flutter.png" alt="flutter" />
+          <img
+            className={style.flutter}
+            src="/logos/flutter.png"
+            alt="flutter"
+          />
           <img className={style.ts} src="/logos/ts.png" alt="ts" />
           <img className={style.rxjs} src="/logos/rxjs.png" alt="rxjs" />
           <img className={style.redux} src="/logos/redux.png" alt="redux" />
@@ -54,16 +66,14 @@ const Hero: FunctionComponent<HeroProps> = () => {
               Un <span>entusiasta</span> Developer & Trainer
             </h2>
             <div className={style.button} id="button">
-            <Link href="/#services">
-            <a className={style.link}>
-              <Button text="I miei servizi" />
-             
-            </a>
-          </Link>
-          <div className={style.socials}>
-
-              <Socials small={true}/>
-          </div>
+              <Link href="/#services">
+                <a className={style.link}>
+                  <Button text="I miei servizi" />
+                </a>
+              </Link>
+              <div className={style.socials}>
+                <Socials small={true} />
+              </div>
             </div>
           </div>
         </div>
@@ -71,7 +81,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
       <div className={style.arrow}>
         <a>
           <svg
-          className="animate-bounce"
+            className="animate-bounce"
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"

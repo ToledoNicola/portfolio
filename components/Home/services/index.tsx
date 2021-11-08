@@ -1,6 +1,7 @@
 import Button from "components/Common/button";
 import { FunctionComponent } from "react";
 import style from "./Services.module.scss";
+import Link from "next/link";
 interface ServicesProps {}
 
 const Services: FunctionComponent<ServicesProps> = () => {
@@ -23,9 +24,9 @@ const Services: FunctionComponent<ServicesProps> = () => {
                   <span className="ev">Sviluppo</span>
                 </h3>
                 <p>
-                  che tu sia un&apos;<em>azienda</em>, una <em>startup</em> o un {" "}
-                  <em>privato</em>, il mio scopo è aiutarti a trovare <em>SOLUZIONI</em>
-                  {' '} e la strada migliore per arrivarci
+                  che tu sia un&apos;<em>azienda</em>, una <em>startup</em> o un{" "}
+                  <em>privato</em>, il mio scopo è aiutarti a trovare{" "}
+                  <em>SOLUZIONI</em> e la strada migliore per arrivarci
                 </p>
                 <p>
                   Attraverso lo sviluppo &quot;classico&quot; oppure con
@@ -35,9 +36,13 @@ const Services: FunctionComponent<ServicesProps> = () => {
                   riducendo i costi di sviluppo fino al 70% */}
                 </p>
               </div>
-              <div className={style.card__button}>
-                <Button text="preventivo gratuito" />
-              </div>
+              <Link href="/#contacts">
+                <a className={style.link}>
+                  <div className={style.card__button}>
+                    <Button text="preventivo gratuito" />
+                  </div>
+                </a>
+              </Link>
             </div>
             <div className={style.card}>
               <div className={style.card__content}>
@@ -52,7 +57,7 @@ const Services: FunctionComponent<ServicesProps> = () => {
                 </p>
                 <p>
                   Il mio obbiettivo non è solo quello di dare informazioni, ma
-                  far capire come queste informazioni si collegano tra di loro 
+                  far capire come queste informazioni si collegano tra di loro
                 </p>
                 {/* <p>
                   ed ho realizzato 2 workshop su Angular per le <em>aziende</em>
@@ -62,9 +67,13 @@ const Services: FunctionComponent<ServicesProps> = () => {
                   per aumentare la produttività
                 </p> */}
               </div>
-              <div className={style.card__button}>
-                <Button text="preventivo gratuito" />
-              </div>
+              <Link href="/#contacts">
+                <a className={style.link}>
+                  <div className={style.card__button}>
+                    <Button text="preventivo gratuito" />
+                  </div>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

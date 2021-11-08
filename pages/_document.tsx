@@ -28,10 +28,7 @@ class MyDocument extends Document {
           `,
             }}
           />
-          <script
-            defer
-            src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
-          ></script>
+         
         </Head>
         <body>
           <Main />
