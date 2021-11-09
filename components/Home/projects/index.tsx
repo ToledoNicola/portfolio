@@ -11,11 +11,11 @@ interface ProjectsProps {}
 const Projects: FunctionComponent<ProjectsProps> = () => {
   return (
     <section className={style.section} id="projects">
-      <div className={style.elements__contained} >
+      <div className={style.elements__contained}>
         <div>
           <div className={style.title} id="title">
             <h1>Progetti</h1>
-            <h2 className="subtitle" >
+            <h2 className="subtitle">
               Alcuni dei miei ultimi <span>progetti</span> ...
             </h2>
           </div>
@@ -25,18 +25,16 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             <Project
               img={portfolio}
               title="Portfolio"
-              stack="angular - scully - sass - flexbox - css grid"
+              stack="Next.js - React - Tailwindcss - Framer Motion"
               description={
                 <p>
                   Il sito che stai vedendo in questo momento 😊. Volevo un sito
-                  veloce e con una buona SEO per questo ho scelto Scully, il
-                  primo Static Site Generator per Angular, ero curioso di
-                  provarlo e questo mi sembrava il momento migliore, inoltre è
-                  possibile generare html dai markdown, in questo modo sara piu
-                  comodo aggiungere contenuti in futuro, e siccome ero indeciso
-                  tra scuro e chiaro ho deciso di metterli entrambi. non ho
-                  utilizzato nessuna libreria/framework css, per le grafiche ho
-                  usato
+                  veloce e con una buona SEO per questo ho scelto Next.js,
+                  inoltre è possibile generare html dai markdown, in questo modo
+                  sara piu comodo aggiungere contenuti in futuro, e siccome ero
+                  indeciso tra scuro e chiaro ho deciso di metterli entrambi.
+                  per lo stile ho utilizzato Tailwindcss e classi custom, per le
+                  grafiche ho usato {" "}
                   <a
                     className="link"
                     href="https://www.adobe.com/it/products/xd.html"
@@ -49,18 +47,18 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
           </div>
           <div className={style.projectW}>
             <Project
-                          img={angularpro}
-
+              img={angularpro}
               reverse={true}
               title="Angular Il Corso"
               stack="angular - ngrx - rxjs - redux - firebase"
               description={
                 <p>
-                  Spinto dall&apos; ❤️ per Angular ho deciso di creare due corsi,
-                  Angular ed Angular Pro. <br />
+                  Spinto dall&apos; ❤️ per Angular ho deciso di creare due
+                  corsi, Angular ed Angular Pro. <br />
                   Nel Corso <em>Angular</em> partiamo dalle basi introducendo il
-                  mondo front-end e l&apos;atomic design, fino ad utilizzare tutti i
-                  principali strumenti che il framework ci mette a disposizione.
+                  mondo front-end e l&apos;atomic design, fino ad utilizzare
+                  tutti i principali strumenti che il framework ci mette a
+                  disposizione.
                   <br />
                   Nel corso <em>Angular Pro</em> vediamo le principali strategie
                   per ottimizzare le performance, utilizzare Rxjs con alcuni
@@ -84,8 +82,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   permette di aumentare i guadagni del tuo ristorante,
                   migliorando la qualità della tua vita. Leoanrd Community
                   unisce aziende e clienti con il passaparola, se hai
-                  un&apos;attivita ti porta clienti, se vuoi consigliare un&apos;attivita
-                  ti paga
+                  un&apos;attivita ti porta clienti, se vuoi consigliare
+                  un&apos;attivita ti paga
                 </p>
               }
             />
@@ -94,7 +92,6 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             <Project
               title="Caf SportelloAmico"
               img={caf}
-
               reverse={true}
               stack="ionic - akita - rxjs"
               description={
