@@ -8,41 +8,52 @@ import { event } from "lib/gtag";
 interface MenuMobileProps {}
 
 const gtEventMenu = (section: string) =>
-event({
-  action: `user click menu link`,
-  category: "Navbar Mobile",
-  label: section,
-});
+  event({
+    action: `user click menu link`,
+    category: "Navbar Mobile",
+    label: section,
+  });
 
 const MenuMobile: FunctionComponent<MenuMobileProps> = () => {
   const [open, setOpen] = useState(false);
-  const clickLink=(section:string)=>{
-    gtEventMenu(section)
-    setOpen(false)
-  }
+  const clickLink = (section: string) => {
+    gtEventMenu(section);
+    setOpen(false);
+  };
   return (
     <div>
-      <div className={cx({ [styles.open]: open })+ ' '+styles.menu}>
+      <div className={cx({ [styles.open]: open }) + " " + styles.menu}>
         <div className={styles.nav}>
           <ul className={styles.ul}>
             <li className={styles.li}>
-              <Link  href="/#about">
-                <a onClick={()=>clickLink('About')} >Chi sono </a>
+              <Link href="/#about">
+                <a onClick={() => clickLink("About")}>Chi sono </a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#services">
-                <a onClick={()=>clickLink('Services')} >Servizi</a>
+                <a onClick={() => clickLink("Services")}>Servizi</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#projects">
-                <a onClick={()=>clickLink('Projects')} >Progetti</a>
+                <a onClick={() => clickLink("Projects")}>Progetti</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#contacts">
-                <a onClick={()=>clickLink('Contacts')} >Contatti</a>
+                <a onClick={() => clickLink("Contacts")}>Contatti</a>
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link href="/#contacts">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/@nicolatoledo.dev"
+                >
+                  Blog
+                </a>
               </Link>
             </li>
             {/* <li className={styles.li}>
@@ -58,8 +69,7 @@ const MenuMobile: FunctionComponent<MenuMobileProps> = () => {
           </ul>
         </div>
         <div className={styles.themeToggle}>
-
-        <ThemeChanger />
+          <ThemeChanger />
         </div>
       </div>
 

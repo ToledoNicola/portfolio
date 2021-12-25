@@ -24,7 +24,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
       <nav>
         <div className={styles.logo}>
           <Link href="/">
-            <a onClick={()=>gtEventMenu('homePage')}>
+            <a onClick={() => gtEventMenu("homePage")}>
               <Image
                 src={theme == "light" ? logo : logoWhite}
                 alt="Logo"
@@ -40,22 +40,33 @@ const Header: FunctionComponent<HeaderProps> = () => {
           <ul className={styles.ul}>
             <li className={styles.li}>
               <Link href="/#about">
-                <a onClick={()=>gtEventMenu('About')}>Chi sono </a>
+                <a onClick={() => gtEventMenu("About")}>Chi sono </a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#services">
-                <a onClick={()=>gtEventMenu('Services')}>Servizi</a>
+                <a onClick={() => gtEventMenu("Services")}>Servizi</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#projects">
-                <a onClick={()=>gtEventMenu('Projects')}>Progetti</a>
+                <a onClick={() => gtEventMenu("Projects")}>Progetti</a>
               </Link>
             </li>
             <li className={styles.li}>
               <Link href="/#contacts">
-                <a onClick={()=>gtEventMenu('Contacts')}>Contatti</a>
+                <a onClick={() => gtEventMenu("Contacts")}>Contatti</a>
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link href="/#contacts">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://medium.com/@nicolatoledo.dev"
+                >
+                  Blog
+                </a>
               </Link>
             </li>
             {/* <li className={styles.li}>
