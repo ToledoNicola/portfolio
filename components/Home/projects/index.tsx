@@ -5,6 +5,9 @@ import portfolio from "public/projects/portfolio@full.png";
 import angularpro from "public/projects/angularpro@full.png";
 import caf from "public/projects/caf@full.png";
 import leonard from "public/projects/leonard@full.png";
+import unobravo from "public/projects/unobravo.png";
+import miosessuologo from "public/projects/miosessuologo.png";
+import giulianods from "public/projects/giulianods.png";
 
 interface ProjectsProps {}
 
@@ -23,6 +26,61 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
         <div className={style.container}>
           <div className={style.projectW}>
             <Project
+              img={unobravo}
+              title="Unobravo"
+              reverse={true}
+              stack="Webflow - Angular - Node.js"
+              description={
+                <p>
+                  Unobravo é una startup innovativa nell&apos;ambito della
+                  psicologia e psicoterapia. Mi sono occupato di creare il team
+                  di sviluppo e nello specifico la parte front-end, quindi la
+                  creazione del sito con webflow, composto da piu di 11 pagine statiche e
+                  dinamiche, e della web app con Angular dove i
+                  pazieti e psicologi possono accedere per gestire e prenotare
+                  nuovi appuntamenti. Ad oggi hanno raggiunto 900 psicologi e piu di 12.000
+                  pazienti attivi
+                </p>
+              }
+            />
+          </div>
+          <div className={style.projectW}>
+            <Project
+              img={miosessuologo}
+              title="Miosessuologo"
+              stack="Webflow - Tally"
+              description={
+                <p>
+                  Centro il Ponte è uno studio di sessuologi nel centro di
+                  firenze con un&apos;account instagram che possiede piu di 500k
+                  followers, per questo progetto ho creato una landing page con
+                  webflow ed il questionario con tally, ad oggi ha ricevuto gia
+                  piu di 200 richieste
+                </p>
+              }
+            />
+          </div>
+          <div className={style.projectW}>
+            <Project
+              img={giulianods}
+              reverse={true}
+              title="Giulinao Di Stefano portfolio"
+              stack="Notion - Super - Calendly"
+              description={
+                <p>
+                  Giuliano è uno psicologo specializzato nei problemi
+                  dell&apos;aviazione civile, la sua necessita era quella di
+                  avere un portfolio dal design semplice per ricevere nuovi
+                  appuntamenti dai suoi pazienti, quindi per questo progetto ho
+                  utlizzato Notion + Super per convertire una pagina notin in un
+                  sito e tramite il codice modificare lo stile, mentre per la
+                  gestione delle prenotazioni ho utlizzato calendly
+                </p>
+              }
+            />
+          </div>
+          <div className={style.projectW}>
+            <Project
               img={portfolio}
               title="Portfolio"
               stack="Next.js - React - Tailwindcss - Framer Motion"
@@ -34,7 +92,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   sara piu comodo aggiungere contenuti in futuro, e siccome ero
                   indeciso tra scuro e chiaro ho deciso di metterli entrambi.
                   per lo stile ho utilizzato Tailwindcss e classi custom, per le
-                  grafiche ho usato {" "}
+                  grafiche ho usato{" "}
                   <a
                     className="link"
                     href="https://www.adobe.com/it/products/xd.html"

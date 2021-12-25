@@ -11,8 +11,8 @@ const Home: NextPage = () => {
     <Page>
       <Hero />
       <Services/>
-      <About/>
       <Projects/>
+      <About/>
       <Contacts/>
     </Page>
   );

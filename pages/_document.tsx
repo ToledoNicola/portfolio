@@ -28,6 +28,9 @@ class MyDocument extends Document {
           `,
             }}
           />
+{/* form di contatti */}
+<script async src="https://tally.so/widgets/embed.js"></script>
+
          
         </Head>
         <body>

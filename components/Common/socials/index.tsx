@@ -55,7 +55,7 @@ const Socials: FunctionComponent<SocialsProps> = ({ small = false }) => {
         className={smallClass(small) + ` ${style.btn} ${style.twitter}`}
         target="_blank"
         rel="noreferrer"
-        href="https://twitter.com/ToledoDev"
+        href="https://twitter.com/ntoledev"
       >
         <FaTwitter className={style.fa} />
       </a>

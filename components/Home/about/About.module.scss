@@ -15,11 +15,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 14rem 6rem 2rem 6rem;
+    padding: 14rem 4rem;
     font-weight: 200;
     text-align: center;
     @include for-size(phone) {
-      padding: 14rem 3rem 2rem 3rem;
+      padding: 14rem 1rem;
+
     }
   }
   .title {

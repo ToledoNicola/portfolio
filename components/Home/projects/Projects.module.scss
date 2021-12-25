@@ -13,9 +13,10 @@
   // }
   .elements__contained {
     max-width: 130rem;
-    padding: 14rem 4rem;
+    padding: 14rem 6rem 2rem 6rem;
+
     @include for-size(phone) {
-      padding: 14rem 1rem;
+      padding: 14rem 3rem 2rem 3rem;
     }
   }
   .container {
