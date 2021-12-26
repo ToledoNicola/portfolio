@@ -3,6 +3,10 @@
     {
       "source": "/blog",
       "destination": "https://medium.com/@nicolatoledo.dev"
+    },
+    {
+      "source": "/digital-product",
+      "destination": "https://typedream.site/toledo-digital-product"
     }
   ]
 }
