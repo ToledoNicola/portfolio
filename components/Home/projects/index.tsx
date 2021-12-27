@@ -29,18 +29,18 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               img={unobravo}
               title="Unobravo"
               reverse={true}
-              stack="Webflow - Angular - Node.js"
+              stack="Sito con blog - Web app"
               link="https://www.unobravo.com/"
               description={
                 <p>
                   Unobravo é una startup innovativa nell&apos;ambito della
                   psicologia e psicoterapia. Mi sono occupato di creare il team
                   di sviluppo e nello specifico la parte front-end, quindi la
-                  creazione del sito con webflow, composto da piu di 11 pagine statiche e
-                  dinamiche, e della web app con Angular dove i
+                  creazione del sito con webflow, composto da piu di 11 pagine
+                  statiche e dinamiche, e della web app con Angular dove i
                   pazieti e psicologi possono accedere per gestire e prenotare
-                  nuovi appuntamenti. Ad oggi hanno raggiunto 900 psicologi e piu di 12.000
-                  pazienti attivi
+                  nuovi appuntamenti. Ad oggi hanno raggiunto 900 psicologi e
+                  piu di 12.000 pazienti attivi
                 </p>
               }
             />
@@ -49,7 +49,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             <Project
               img={miosessuologo}
               title="Miosessuologo"
-              stack="Webflow - Tally"
+              stack="Landing page + Questionario"
               link="https://www.miosessuologo.it/"
               description={
                 <p>
@@ -67,7 +67,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               img={giulianods}
               reverse={true}
               title="Giulinao Di Stefano portfolio"
-              stack="Notion - Super - Calendly"
+              stack="Portfolio + Prenotazione"
               link="https://www.giulianodistefano.it/"
               description={
                 <p>
@@ -86,7 +86,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             <Project
               img={portfolio}
               title="Portfolio"
-              stack="Next.js - React - Tailwindcss - Framer Motion"
+              stack="Portfolio"
               description={
                 <p>
                   Il sito che stai vedendo in questo momento 😊. Volevo un sito
@@ -110,8 +110,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             <Project
               img={angularpro}
               reverse={true}
-              title="Angular Il Corso"
-              stack="angular - ngrx - rxjs - redux - firebase"
+              title="Angular Workshop"
+              stack="Workshop su Angular"
               link="https://www.angularpro.nicolatoledo.dev/"
               description={
                 <p>
@@ -135,7 +135,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
             <Project
               title="Leonard System"
               img={leonard}
-              stack="ionic - akita - Rxjs - firebase - serverless"
+              stack="Web app + PWA"
               link="https://community.leonardsystem.com/"
               description={
                 <p>
@@ -146,7 +146,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   migliorando la qualità della tua vita. Leoanrd Community
                   unisce aziende e clienti con il passaparola, se hai
                   un&apos;attivita ti porta clienti, se vuoi consigliare
-                  un&apos;attivita ti paga
+                  un&apos;attivita ti paga, le tecnologie che ho utilizzato sono
+                  ionic - akita - Rxjs - firebase - serverless
                 </p>
               }
             />
@@ -156,7 +157,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               title="Caf SportelloAmico"
               img={caf}
               reverse={true}
-              stack="ionic - akita - rxjs"
+              stack="Web app"
               description={
                 <p>
                   Caf SportelloAmico – FiscalWeb il 730 lo puoi fare online:
@@ -167,7 +168,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   per casa e cartelline gonfie sulla tavola Nessuna
                   responsabilità per la compilazione perché è l’esperto fiscale
                   ad occuparsene Massima garanzia di privacy e sicurezza. il
-                  progetto è stato realizzato in collaborazione con
+                  progetto è stato realizzato in collaborazione con{" "}
                   <a
                     className="link"
                     href="https://www.quantos.it"
@@ -176,6 +177,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   >
                     Quantos
                   </a>
+                  , le tecnologie che ho utilizzato sono: ionic - akita - rxjs
                 </p>
               }
             />
