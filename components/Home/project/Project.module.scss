@@ -82,6 +82,9 @@
       @include for-size(tab-port) {
         text-align: center;
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       p {
         margin-bottom: 2rem;
@@ -93,7 +96,7 @@
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1.1rem;
-        margin: 0px 0px 4rem;
+        // margin: 0px 0px 4rem;
         transition: color 0.2s ease-out 0s;
       }
     }

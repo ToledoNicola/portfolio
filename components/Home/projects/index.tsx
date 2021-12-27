@@ -3,7 +3,7 @@ import Project from "../project";
 import style from "./Projects.module.scss";
 import portfolio from "public/projects/portfolio@full.png";
 import angularpro from "public/projects/angularpro@full.png";
-import caf from "public/projects/caf@full.png";
+import caf from "public/projects/caf.png";
 import leonard from "public/projects/leonard@full.png";
 import unobravo from "public/projects/unobravo.png";
 import miosessuologo from "public/projects/miosessuologo.png";
@@ -30,6 +30,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               title="Unobravo"
               reverse={true}
               stack="Webflow - Angular - Node.js"
+              link="https://www.unobravo.com/"
               description={
                 <p>
                   Unobravo é una startup innovativa nell&apos;ambito della
@@ -49,6 +50,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               img={miosessuologo}
               title="Miosessuologo"
               stack="Webflow - Tally"
+              link="https://www.miosessuologo.it/"
               description={
                 <p>
                   Centro il Ponte è uno studio di sessuologi nel centro di
@@ -66,6 +68,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               reverse={true}
               title="Giulinao Di Stefano portfolio"
               stack="Notion - Super - Calendly"
+              link="https://www.giulianodistefano.it/"
               description={
                 <p>
                   Giuliano è uno psicologo specializzato nei problemi
@@ -109,6 +112,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               reverse={true}
               title="Angular Il Corso"
               stack="angular - ngrx - rxjs - redux - firebase"
+              link="https://www.angularpro.nicolatoledo.dev/"
               description={
                 <p>
                   Spinto dall&apos; ❤️ per Angular ho deciso di creare due
@@ -132,6 +136,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               title="Leonard System"
               img={leonard}
               stack="ionic - akita - Rxjs - firebase - serverless"
+              link="https://community.leonardsystem.com/"
               description={
                 <p>
                   Leonard è una startup innovativa nell&apos;ambito della

@@ -1,6 +1,7 @@
 import { FunctionComponent, ReactNode } from "react";
 import Image from "next/image";
 import style from "./Project.module.scss";
+import Button from "components/Common/button";
 
 interface ProjectProps {
   title: string;
@@ -8,6 +9,7 @@ interface ProjectProps {
   description: ReactNode;
   img: StaticImageData;
   stack: string;
+  link?:string
 }
 
 const Project: FunctionComponent<ProjectProps> = ({
@@ -16,6 +18,7 @@ const Project: FunctionComponent<ProjectProps> = ({
   img,
   description,
   stack,
+  link
 }) => {
   return (
     <div className={style.card} id="card">
@@ -39,6 +42,7 @@ const Project: FunctionComponent<ProjectProps> = ({
         <div className={style.description}>
           {description}
           <p className={style.projectStack}>{stack}</p>{" "}
+         {  link && <Button small={true} link={link} text="Visita il sito" />} 
         </div>
         <h2></h2>
       </div>
