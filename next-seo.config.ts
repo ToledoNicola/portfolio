@@ -1,14 +1,14 @@
 import { NextSeoProps } from "next-seo";
 
 const conf: NextSeoProps = {
-  title:'Nicola Toledo | Developer & Trainer',
+  title:'Nicola Toledo | Webflow Developer',
   description:"I’ll turn your Figma, XD or Sketch file into a pixel-perfect Webflow Project ready to publish! 🚀",
   openGraph: {
     type: "website",
     locale: "it",
     url: "https://www.nicolatoledo.dev",
-    site_name: "Nicola Toledo | Developer & Trainer",
-    title: "Nicola Toledo | Developer & Trainer",
+    site_name: "Nicola Toledo | Webflow Developer",
+    title: "Nicola Toledo | Webflow Developer",
     images:[
       {
         url: 'https://www.nicolatoledo.dev/open-image.png',
