@@ -37,6 +37,9 @@ const Header: FunctionComponent<HeaderProps> = () => {
         </div>
 
         <div className={styles.menu}>
+        <Link href="https://en.nicolatoledo.dev/">
+                <a className={styles.langEmoji} >🇬🇧</a>
+              </Link>
           <ul className={styles.ul}>
             <li className={styles.li}>
               <Link href="/#about">

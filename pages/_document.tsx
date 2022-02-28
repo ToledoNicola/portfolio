@@ -6,6 +6,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap"
             rel="stylesheet"

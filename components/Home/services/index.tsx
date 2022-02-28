@@ -21,17 +21,22 @@ const Services: FunctionComponent<ServicesProps> = () => {
                 <p className={style.card__emoji}>👨🏻‍💻</p>
 
                 <h3>
-                  <span className="ev">Sviluppo</span>
+                  <span className="ev">Sviluppo Webflow</span>
                 </h3>
                 <p>
                   che tu sia un&apos;<em>azienda</em>, una <em>startup</em> o un{" "}
-                  <em>privato</em>, il mio scopo è aiutarti a trovare{" "}
-                  <em>SOLUZIONI</em> e la strada migliore per arrivarci
+                  <em>privato</em>, posso convertire i
+                  tuoi file Figma,XD o Sketch in un progetto Webflow pixel perfect.
+                  {/* il mio scopo è aiutarti a trovare{" "}
+                  <em>SOLUZIONI</em> e la strada migliore per arrivarci */}
                 </p>
                 <p>
-                  Attraverso lo sviluppo &quot;classico&quot; oppure con
+                  Se non hai il design posso
+                  aiutarti lo stesso grazie al mio network di professionisti,
+                  per creare il miglior prodotto che tu possa immaginare ✨
+                  {/* Attraverso lo sviluppo &quot;classico&quot; oppure con
                   piattaforme no-code, per creare app veloci e belle che
-                  semplificano la vita delle persone
+                  semplificano la vita delle persone */}
                   {/* per realizzare MVP 10x piu velocemente e
                   riducendo i costi di sviluppo fino al 70% */}
                 </p>
@@ -46,18 +51,15 @@ const Services: FunctionComponent<ServicesProps> = () => {
             </div>
             <div className={style.card}>
               <div className={style.card__content}>
-                <p className={style.card__emoji}>👨🏻‍🏫</p>
+                <p className={style.card__emoji}>𝍌</p>
                 <h3>
-                  <span className="ev">Formazione</span>
+                  <span className="ev">Sviluppo Notion</span>
                 </h3>
                 <p>
-                  Collaboro con varie scuole e startup di formazione online per
-                  sviluppatori, nello specifico su <em>Next.js</em>,{" "}
-                  <em>React</em> ed <em>Angular</em>
+                  Notion è uno degli strumenti che ha cambiato il modo di gestire i documenti e progetti
                 </p>
                 <p>
-                  Il mio obbiettivo non è solo quello di dare informazioni, ma
-                  far capire come queste informazioni si collegano tra di loro
+                  Grazie alla sua semplicita puoi gestire il tuo sito in totale autonomia, ogni modifica che farai nella tua pagina Notion si vedra in automatico sul tuo sito 🚀
                 </p>
                 {/* <p>
                   ed ho realizzato 2 workshop su Angular per le <em>aziende</em>

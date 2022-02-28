@@ -38,8 +38,8 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   di sviluppo e nello specifico la parte front-end, quindi la
                   creazione del sito con webflow, composto da piu di 11 pagine
                   statiche e dinamiche, e della web app con Angular dove i
-                  pazieti e psicologi possono accedere per gestire e prenotare
-                  nuovi appuntamenti. Ad oggi hanno raggiunto 900 psicologi e
+                  pazienti e psicologi possono accedere per gestire e prenotare
+                  nuovi appuntamenti. Ad oggi hanno raggiunto 900+ psicologi e
                   piu di 12.000 pazienti attivi
                 </p>
               }
@@ -53,11 +53,10 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
               link="https://www.miosessuologo.it/"
               description={
                 <p>
-                  Centro il Ponte è uno studio di sessuologi nel centro di
-                  firenze con un&apos;account instagram che possiede piu di 500k
-                  followers, per questo progetto ho creato una landing page con
-                  webflow ed il questionario con tally, ad oggi ha ricevuto gia
-                  piu di 200 richieste
+                  Miosessuologo è una startup nell&apos;ambito della sessuologia, per
+                  questo progetto ho creato un team di designers per poi convertire i file figma in un progetto
+                  Webflow ed ho creato il questionario con tally, nelle prime settimane hanno ricevuto
+                   piu di 200 richieste
                 </p>
               }
             />
@@ -75,8 +74,7 @@ const Projects: FunctionComponent<ProjectsProps> = () => {
                   dell&apos;aviazione civile, la sua necessita era quella di
                   avere un portfolio dal design semplice per ricevere nuovi
                   appuntamenti dai suoi pazienti, quindi per questo progetto ho
-                  utlizzato Notion + Super per convertire una pagina notin in un
-                  sito e tramite il codice modificare lo stile, mentre per la
+                  utlizzato Notion come CMS perche doveva essere super facile da modificare, mentre per la
                   gestione delle prenotazioni ho utlizzato calendly
                 </p>
               }

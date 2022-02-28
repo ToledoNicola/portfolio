@@ -50,11 +50,11 @@ const About: FunctionComponent<AboutProps> = () => {
             </Link>{" "}
             per aziende.
           </p>
-          <p>
+          {/* <p>
             oltre alla programmazione &quot;classica&quot; utilizzo piattaforme{" "}
-            <em>no/low code</em> come Webflow, Notion, Framer per sviluppare una
+            <em>no/low code</em> come Webflow, Notion, Framer Sites per sviluppare una
             o piu parti in modo visuale.
-            {/* (se vuoi
+            (se vuoi
             saperne di più visita il mio{" "}
             <a
               className="link"
@@ -64,14 +64,14 @@ const About: FunctionComponent<AboutProps> = () => {
             >
               Blog
             </a>
-            ) */}
-          </p>
+            )
+          </p> */}
           <p>
-            Dal 2020 mi sono innamorato di <span className="ev">Next.js</span> e{" "}
-            <span className="ev">Notion</span>, il primo è un framework react,
-            per creare applicazioeni web <em>veloci</em> e <em>performanti</em>,
-            mentre il secondo è uno strumento no-code basato su pagine e
-            database per oganizzare qualsiasi cosa.
+            Dal 2020 mi sono innamorato del mondo No-code nello specifico di <span className="ev">Webflow</span> e{" "}
+            <span className="ev">Notion</span>, il primo è un Site builder,
+            per creare siti <em>veloci</em> e <em>performanti</em>,
+            mentre il secondo è uno strumento basato su pagine e
+            database per oganizzare qualsiasi cosa, io lo uso anche come CMS.
           </p>
 
           <p>
