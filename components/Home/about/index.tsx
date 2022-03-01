@@ -69,9 +69,9 @@ const About: FunctionComponent<AboutProps> = () => {
           <p>
             Dal 2020 mi sono innamorato del mondo No-code nello specifico di <span className="ev">Webflow</span> e{" "}
             <span className="ev">Notion</span>, il primo è un Site builder,
-            per creare siti <em>veloci</em> e <em>performanti</em>,
+            per creare siti <em>veloci</em> e <em>performanti</em> e facili da modificare anche per chi non è tecnico,
             mentre il secondo è uno strumento basato su pagine e
-            database per oganizzare qualsiasi cosa, io lo uso anche come CMS.
+            database per oganizzare qualsiasi cosa, io lo uso anche come CMS per <em>sincronizzare il contenuto direttamente sul sito.</em>
           </p>
 
           <p>
@@ -116,9 +116,12 @@ const About: FunctionComponent<AboutProps> = () => {
             <span className="ev">tecnologie/linguaggi</span> è:
           </h2>
           <p className={style.stack}>
+            CSS - JAVASCRIPT - WEBFLOW - NOTION - NO-CODE
+          </p>
+          {/* <p className={style.stack}>
             SASS - TAILWIND - JAVASCRIPT - TYPESCRIPT - NEXT.JS - ANGULAR -
             REACT - RXJS - FIREBASE - IONIC - GIT - WEBFLOW - NOTION
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

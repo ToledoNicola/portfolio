@@ -63,7 +63,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
               </span>
             </h1>
             <h2>
-              Un <span>entusiasta</span> Developer & Trainer
+              Un <span>entusiasta</span> Webflow Developer
             </h2>
             <div className={style.button} id="button">
               <Link href="/#services">
